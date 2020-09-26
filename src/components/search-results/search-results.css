@@ -1,0 +1,39 @@
+.search-results {
+  overflow-y: auto;
+  
+  background-color: var(--searchResultsBackground);
+  border-top: 1px solid var(--lightGraySecondary);
+}
+
+.search-results.empty {
+  padding: 18px 24px;
+}
+
+.search-results h4 {
+  margin: 0;
+  
+  color: var(--searchResultText);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.search-results p {
+  margin: 4px 0;
+
+  color: var(--searchResultDetailsText);
+  font-size: 13px;
+}
+
+.search-results p.call-to-action {
+  margin: 18px 0 0;
+}
+
+.search-results a {
+  color: var(--blue);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.search-results a:hover {
+  text-decoration: underline;
+}

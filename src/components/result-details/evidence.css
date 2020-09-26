@@ -1,0 +1,21 @@
+.evidence {
+  display: flex;
+  flex-direction: column;
+}
+
+.evidence > h4 {
+  margin: 24px 0 0 0;
+  padding: 0 24px;
+
+  color: var(--evidenceTitle);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.evidence > p {
+  margin: 12px 0;
+  padding: 0 24px;
+
+  color: var(--evidenceDescription);
+  font-size: 13px;
+}

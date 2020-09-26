@@ -1,0 +1,56 @@
+.result-details {
+  flex: 1;
+  
+  overflow-y: auto;
+}
+
+.result-details .header {
+  display: flex;
+  align-items: center;
+
+  padding: 12px 18px 16px 0;
+}
+
+.result-details .header svg {
+  width: 24px;
+  height: 24px;
+
+  padding: 24px;
+
+  color: var(--arrowLeftIcon);
+  cursor: pointer;
+}
+
+.result-details .header svg:hover {
+  color: var(--arrowLeftIconHover);
+}
+
+.result-details .header h3 {
+  margin: 0;
+
+  color: var(--resultTitle);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.result-details .header p {
+  margin: 0;
+  padding-top: 8px;
+
+  color: var(--resultDate);
+  font-size: 14px;
+}
+
+.result-details .divider {
+  height: 1px;
+  background-color: var(--resultDetailsDivider);
+}
+
+.results-details-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}

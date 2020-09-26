@@ -1,0 +1,73 @@
+.omnibox {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  max-width: 392px;
+  width: calc(100% - 16px);
+  height: 48px;
+  margin: 8px;
+  border-radius: 8px;
+
+  background-color: var(--omniboxPrimary);
+  box-shadow: 0 2px 4px var(--transparentBlack), 0 -1px 0px var(--transparentBlack);
+
+  z-index: 2;
+}
+
+.omnibox form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  height: 100%;
+}
+
+.omnibox form input {
+  flex: 1;
+
+  min-width: 0;
+  padding: 16px 8px;
+
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--inputPrimary);
+
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  text-overflow: ellipsis;
+}
+
+.omnibox form input::placeholder {
+  color: var(--gray);
+}
+
+.omnibox form .icon {
+  flex: 0 0 24px;
+
+  width: 24px;
+  height: 24px;
+
+  padding: 12px 15px;
+
+  color: var(--gray);
+  cursor: pointer;
+}
+
+.omnibox form .icon:hover,
+.omnibox form .icon.active {
+  color: var(--blue);
+}
+
+.omnibox form .icon.logo {
+  color: var(--logo);
+}
+
+.omnibox form .divider {
+  width: 1px;
+  height: 24px;
+
+  background-color: var(--lightGrayPrimary);
+}

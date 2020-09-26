@@ -1,0 +1,20 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  
+  width: 408px;
+  height: 100vh;
+
+  background-color: var(--panelOpenBackground);
+  box-shadow: 0 0 20px var(--transparentBlack);
+
+  z-index: 1;
+}
+
+.panel:not(.open) {
+  display: none;
+}
+
+.panel .omnibox-spacer {
+  flex: 0 0 64px;
+}
